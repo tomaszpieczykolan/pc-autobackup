@@ -17,7 +17,7 @@ RUN apt-get update -y && \
     apt-get install -y --no-install-recommends software-properties-common && \
     apt-get install -y --no-install-recommends $REQUIRED_PACKAGES && \
     apt-get install -y --no-install-recommends git meson ca-certificates dpkg-dev && \
-    git clone --branch py3 https://github.com/warwickh/pc-autobackup.git && \
+    git clone https://github.com/warwickh/pc-autobackup.git && \
     # Cleanup \
     apt-get remove -y software-properties-common && \
     apt-get autoremove -y && \
